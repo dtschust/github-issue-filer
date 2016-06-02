@@ -1,0 +1,26 @@
+{
+  "name": "github-issue-filer",
+  "version": "1.0.0",
+  "description": "Files github issues for you",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dtschust/github-issue-filer.git"
+  },
+  "author": "Drew Schuster",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dtschust/github-issue-filer/issues"
+  },
+  "homepage": "https://github.com/dtschust/github-issue-filer#readme",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "es6-promise": "^3.2.1",
+    "express": "^4.13.4",
+    "isomorphic-fetch": "^2.2.1"
+  }
+}
