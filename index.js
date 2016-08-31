@@ -33,11 +33,13 @@ app.post('/', function (req, res) {
       assignee: default_assignee
     })
   }).then(function(response) {
-    res.status(200).end();
+    return response.json()
   }, function(response) {
     res.status(500).end()
   }).catch(function () {
     res.status(500).end()
+  }).then(function (json) {
+    res.status(200).json({bugURL: json.html_url})
   })
 });
 
